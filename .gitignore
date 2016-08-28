@@ -3,3 +3,27 @@
 ################################################################################
 
 /.vs
+/Assets/Editor
+/Assets/KY_effects
+*.meta
+*.fbx
+*.blend
+/Assets/Resources/Effects
+/Assets/Resources/Fonts
+/Assets/Resources/Models
+/Assets/Resources/Prefabs
+/Assets/Resources/Sounds
+/Assets/Resources/Textures
+/Assets/Scenes
+/Assets/skyb1
+/Assets/Standard Assets
+/Library
+/Temp/UnityVS_obj/Debug
+/LD36.sln.txt
+/LD36.sln
+/LD36.CSharp.Plugins.csproj.txt
+/LD36.CSharp.Plugins.csproj
+/LD36.CSharp.Editor.csproj.txt
+/LD36.CSharp.Editor.csproj
+/LD36.CSharp.csproj.txt
+/LD36.CSharp.csproj
