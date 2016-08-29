@@ -17,9 +17,21 @@
     //TODO: Gegner draggen
     //TODO: Sprint
     //TODO: drop attack
-    //TODO: Andere schwert position wenn stehen
+    //TODO: Andere schwert position wenn stehen, wenn sprinten etc.
+    //TODO: Effekte für warping
+    //TODO: Warping Kreis schöner machen, Partikel etc.
+    //TODO: Mehr schwer animationen für Kampf (bevor man getötet ist)
+    //TODO: Drop attack
+    //TODO: vents etc.
 
     //0.37 -0.36 0.29 -> Sprint position
     //-22.1 9.9 -24.9 -> Sprint rotation
+
+
+    //TODOS
+    //AI
+    //LEVELS
+    //MANA LEISTE
+    //SOUND
 }
 

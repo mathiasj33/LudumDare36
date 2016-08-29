@@ -11,14 +11,18 @@ public class PlayerControl : MonoBehaviour
     private CharacterController characterControl;
     private float yMovement;
 
+    private WarpControl warpControl;
+
     void Start()
     {
         camControl = GameObject.Find("Main Camera").GetComponent<CameraControl>();
         characterControl = gameObject.GetComponent<CharacterController>();
+        warpControl = GetComponent<WarpControl>();
     }
 
     void Update()
     {
+        if (warpControl.IsWarping) return;
         transform.forward = camControl.Camera.transform.forward;
         ApplyCrouch();
         characterControl.Move(CalculateMovementVector() * Time.deltaTime * 60);

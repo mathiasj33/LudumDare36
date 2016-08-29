@@ -12,7 +12,7 @@ public class ChangeEmissionColorScript : MonoBehaviour {
 	
     private IEnumerator ChangeEmissionColor()
     {
-        Material mat = gameObject.GetComponent<MeshRenderer>().material;
+        Material mat = gameObject.GetComponent<SkinnedMeshRenderer>().material;
 
         for (int i = 0; i < 20; i++)
         {
