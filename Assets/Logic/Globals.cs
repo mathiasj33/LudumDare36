@@ -23,15 +23,23 @@
     //TODO: Mehr schwer animationen für Kampf (bevor man getötet ist)
     //TODO: Drop attack
     //TODO: vents etc.
+    //TODO: Magic und weapon upgrades etc.
+    //TODO: Zu anderem setting wechseln??
+    //TODO: Warping cleanen; Fade circle2 und down in und so
+    //TODO: Minimap(?)
+    //TODO: Wände schöner
+    //TODO: Clipping von Schwert und auch von WarpCircle etc. verhindern
+    //TODO: Warping richtig clean machen von den looks und so
+    //TODO: Warp code cleanen
+    //TODO: Raumhöhe restriction umgehen
 
     //0.37 -0.36 0.29 -> Sprint position
     //-22.1 9.9 -24.9 -> Sprint rotation
 
-
-    //TODOS
     //AI
     //LEVELS
     //MANA LEISTE
     //SOUND
+    //Warpen cleanen
 }
 

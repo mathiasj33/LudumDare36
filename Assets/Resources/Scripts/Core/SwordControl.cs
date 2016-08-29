@@ -4,7 +4,6 @@ using System.Collections;
 public class SwordControl : MonoBehaviour
 {
     private SwordAnimationControl animControl;
-    private RayCastHelper rayCastHelper;
     private Camera cam;
     private GameObject player;
     private Invoker invoker;
@@ -12,7 +11,6 @@ public class SwordControl : MonoBehaviour
     void Start()
     {
         animControl = GetComponent<SwordAnimationControl>();
-        rayCastHelper = GameObject.Find("Player").GetComponent<RayCastHelper>();
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         player = GameObject.Find("Player");
         invoker = GameObject.Find("Main").GetComponent<Invoker>();
@@ -25,14 +23,10 @@ public class SwordControl : MonoBehaviour
             animControl.PlayAnim();
             invoker.Invoke(.3f, () =>
             {
-                GameObject hit = rayCastHelper.CastFromPlayer(cam.gameObject.transform.forward);
-                Vector3 hitPos = hit.transform.position;
-                hitPos.y = 0;
-                Vector3 playerPos = player.transform.position;
-                playerPos.y = 0;
-                if (hit != null && Vector3.Distance(playerPos, hitPos) < 1.5f)
+                RaycastHit hit;
+                if(Physics.Raycast(player.transform.position, cam.gameObject.transform.forward, out hit, 1.5f))
                 {
-                    EnemyControl enemyControl = hit.GetComponent<EnemyControl>();
+                    EnemyControl enemyControl = hit.collider.gameObject.GetComponent<EnemyControl>();
                     if (enemyControl != null) enemyControl.Die();
                 }
             });
